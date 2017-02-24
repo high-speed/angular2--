@@ -1,0 +1,13 @@
+<div class="page-top">
+<div class="col-md-2 logo">无限帮管理后台</div>
+  <div class="col-md-10 meu">
+    <ul class="nav navbar-nav">
+      <li *ngFor="let child of navList" (click)="selectedItem(child);"
+          [ngClass]="{'active': (child==selectedChild)}">
+        <a class="bar-link"  href="javascript:void(0)">{{(child==selectedChild)+child.title}}</a>
+        <side-left *ngIf="child==selectedChild&&child.children.length" [navChildrenList]="child.children"></side-left>
+      </li>
+    </ul>
+
+  </div>
+</div>

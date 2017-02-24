@@ -1,0 +1,36 @@
+<!--left-->
+<!---->
+<bar-top></bar-top>
+<!--right-->
+
+
+<div class="main-content">
+  我是内容区
+
+  `
+
+  <!--<router-outlet></router-outlet>-->
+  <!-- Routed views go here -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <h6>table</h6>
+          <ng2-smart-table [settings]="settings" [source]="data" ></ng2-smart-table>
+        </div>
+        <div class="col-md-6">
+          <h6>ng2-toastr </h6>
+          <button class="btn toast-success" (click)="showSuccess()">Toastr Tester</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--<router-outlet></router-outlet>-->
+
+</div>
